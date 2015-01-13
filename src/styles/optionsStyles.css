@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height: 100%;
+    width: 100%
+}
+@font-face {
+    font-family: fauna;
+    src: url(/res/fonts/Fauna_One/FaunaOne-Regular.ttf);
+    font-weight: bold;
+}
+.mandatory {
+    color: red;
+}
+.homeTheme {
+    background-position: 0 0, 0 0 , 0 0;
+/*background-image: url(/res/images/Train2.jpg), url(/res/images/homeBlueprint.png), url(/res/images/homeGradient.png);*/
+background-repeat: no-repeat,repeat, repeat-x;
+font-family: 'fauna';
+/*color: black;*/
+background-size: cover;
+}
+header {font-size: 2.8em;
+   /* color:white;
+padding: 10px;
+ background: -webkit-linear-gradient(90deg, rgba(23, 81, 133, 0.64) 0%, rgba(14, 44, 71, 1) 100%); 
+margin: 1px 0px 10px 0px;
+height: 65px;*/
+font-family: sans-serif;
+text-shadow: 1px 1px 4px #DEDCDC;
+    border-bottom: solid 2px rgba(255,255,255,.2);
+}
+.controls {
+    width: 100%;
+}
+.controlTiles {
+    display: inline-block;
+    background-position: 100% 0;
+   /* background-color: #e66000;*/
+    margin: 0% 1%;
+    width: 22%;
+    height: 30px;
+   /* box-shadow: 1px 1px 5px #0E05B2;
+    transition: height .2s, transform .2s, font-size .2s;*/
+    transform: scale(1, 1);
+    cursor: pointer
+}
+/*.controlTiles:hover {
+    transform: scale(1.15, 1.15);
+    height: 40px;
+    background-color: #AC4E0A;
+    font-weight: bold;
+    color:black;
+}*/
+.addPassengerForm {
+    color: black;
+    background-color: rgb(221, 221, 221);
+    padding: 10px
+}
+section#detailedViewContainer{
+    margin-top: 20px;
+}
+input[type='text']{
+     text-transform: capitalize;
+}
+.allCapital{
+    text-transform: uppercase !important;
+}

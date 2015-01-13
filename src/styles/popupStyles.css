@@ -1,0 +1,14 @@
+*{
+margin:0;
+padding:0;
+}
+
+body{
+    text-shadow: 1px 1px 0 white;
+    overflow-x: auto;
+    width: 200px;
+    border: solid 1px skyblue;
+}
+.mandatory{
+    color:red;
+}

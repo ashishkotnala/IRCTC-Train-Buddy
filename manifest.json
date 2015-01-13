@@ -1,0 +1,38 @@
+{
+    "name": "IRCTC Tatkal Buddy",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_icon": {
+            "19": "res/icons/trainIcon19.png",
+            "38": "res/icons/trainIcon38.png"
+        },
+        "default_title": "Book tatkal tickets fast",
+        "default_popup": "src/popup.html"
+    },
+    "background": {
+        "scripts": ["src/scripts/background.js"],
+        "persistent": true
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js": ["src/scripts/content.js"],
+            "run_at":"document_start"
+    }
+    ],
+    "omnibox": {
+        "keyword": "tatkal"
+    },
+    "permissions": [
+          "storage"
+        ],
+    "icons": {
+        "16": "res/icons/trainIcon16.png",
+        "48": "res/icons/trainIcon48.png",
+        "128": "res/icons/trainIcon128.png"
+    },
+     "options_page": "src/options.html"
+ 
+
+}
